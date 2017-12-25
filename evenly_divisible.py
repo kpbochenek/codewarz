@@ -5,7 +5,7 @@ import sys
 
 with open(sys.argv[1], 'r') as f:
     for l in f:
-        left, right = map(float, l.split())
+        left, right = sorted(map(float, l.split()))
         current = left
         while current <= right:
             if int(current) == current:
